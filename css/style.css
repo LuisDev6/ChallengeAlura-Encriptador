@@ -11,9 +11,8 @@ html, body {
 
 body {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #5481d4;
+    flex-direction: column;
+    background-color: #F3F5FC;
     color: #000000;
 }
 
@@ -50,4 +49,38 @@ button {
 
 input, button, textarea, select {
     font: inherit;
+}
+.header {
+    display: flex;
+    margin-bottom: 20px;
+}
+.header img {
+    height: 40px;
+    width: auto;
+}
+.main {
+    width: 100;
+    display: flex;
+    justify-content:space-between;
+}
+
+.seccion__encriptador {
+}
+.seccion__resultado {
+    background-color: white;
+    border: 1px solid #000000;
+    border-radius: 32px;
+
+}
+
+.condicionesTexto {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    gap: 8px;
+    color: #495057;   
+}
+.condicionesTexto img {
+    height: 16px;
+    width: auto;
 }

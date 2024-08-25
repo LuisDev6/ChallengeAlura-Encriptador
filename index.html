@@ -1,14 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Encriptador de texto</title>
 </head>
+
 <body>
-    <h1>Encriptador de texto</h1>
+    <header class="header">
+        <img src="/images/logo.png" alt="Logo Alura">
+    </header>
+    <main class="main">
+        <section class="seccion__encriptador">
+            <textarea name="texto" id="texto" placeholder="Escribe aquí el texto que deseas encriptar"></textarea>
+
+            <div class="condicionesTexto">
+                <img src="/images/exclamacion.png" alt="Signo de exclamación">
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div>
+                <button class="boton__encriptar">Encriptar</button>
+                <button class="boton__desencriptar">Desencriptar</button>
+            </div>
+
+        </section>
+        <section class="seccion__resultado">
+            <textarea name="" id=""></textarea>
+            <img src="/images/figura.png" alt="Figura de persona buscando información">
+            <p>Ningún mensaje fue encontrado</p>
+            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            <button class="boton__copiar">Copiar</button>
+        </section>
+    </main>
+
 
 </body>
-<footer>Curso de Alura 2024 - Encriptador de texto diseñado por LuisDev6</footer>
+<footer>
+    <p>Curso de Alura 2024 - Encriptador de texto diseñado por LuisDev6</p>
+</footer>
+
 </html>
