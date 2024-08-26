@@ -18,24 +18,28 @@
     <main class="main">
 
         <section class="seccion__encriptador">
-            <textarea name="texto" id="texto" placeholder="Ingrese el texto aquí" autofocus="true"></textarea>
+            <textarea name="texto" id="texto" placeholder="Ingrese el texto aquí..." autofocus="true"></textarea>
 
             <div class="condicionesTexto">
                 <img src="/images/exclamacion.png" alt="Signo de exclamación">
                 <p>Solo letras minúsculas y sin acentos</p>
             </div>
-            <div class="botones">
+            <div class="botones__encriptar__desencriptar">
                 <button class="boton__encriptar">Encriptar</button>
-                <button class="boton__desencriptar">Desencriptar</button>
+                <button class="boton__desencriptar" disabled >Desencriptar</button>
             </div>
         </section>
 
         <section class="seccion__resultado">
             <textarea class="cajaTexto_encriptado"></textarea>
             <img src="/images/figura.png" alt="Figura de persona buscando información">
+           
             <p class="noSeEncontroMensaje">Ningún mensaje fue encontrado</p>
             <p class="mensajeIncreseTexto">Ingresa el texto que desees encriptar o desencriptar.</p>
+           
+            <div>
             <button class="boton__copiar" disabled>Copiar</button>
+            </div>
         </section>
     </main>
 
