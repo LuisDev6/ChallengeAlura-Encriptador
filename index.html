@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <title>Encriptador de texto</title>
 </head>
 
@@ -13,25 +16,26 @@
         <img src="/images/logo.png" alt="Logo Alura">
     </header>
     <main class="main">
+
         <section class="seccion__encriptador">
-            <textarea name="texto" id="texto" placeholder="Escribe aquí el texto que deseas encriptar"></textarea>
+            <textarea name="texto" id="texto" placeholder="Ingrese el texto aquí" autofocus="true"></textarea>
 
             <div class="condicionesTexto">
                 <img src="/images/exclamacion.png" alt="Signo de exclamación">
                 <p>Solo letras minúsculas y sin acentos</p>
             </div>
-            <div>
+            <div class="botones">
                 <button class="boton__encriptar">Encriptar</button>
                 <button class="boton__desencriptar">Desencriptar</button>
             </div>
-
         </section>
+
         <section class="seccion__resultado">
-            <textarea name="" id=""></textarea>
+            <textarea class="cajaTexto_encriptado"></textarea>
             <img src="/images/figura.png" alt="Figura de persona buscando información">
-            <p>Ningún mensaje fue encontrado</p>
-            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
-            <button class="boton__copiar">Copiar</button>
+            <p class="noSeEncontroMensaje">Ningún mensaje fue encontrado</p>
+            <p class="mensajeIncreseTexto">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <button class="boton__copiar" disabled>Copiar</button>
         </section>
     </main>
 

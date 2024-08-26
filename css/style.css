@@ -1,4 +1,4 @@
-* {
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,6 +12,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     background-color: #F3F5FC;
     color: #000000;
 }
@@ -49,29 +50,62 @@ button {
 
 input, button, textarea, select {
     font: inherit;
+    border: 1px solid #000000;
+}
+textarea {
+    font-family: "Inter", sans-serif;
+    background-color: #83889b;
+    resize: none;
+    border: none;
+    width: 680px;
+    height: auto;
+}
+textarea::placeholder{
+    color: #0A3871;
+    font-size: 32px;
+    font-weight: 400;
 }
 .header {
-    display: flex;
-    margin-bottom: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
 }
 .header img {
     height: 40px;
     width: auto;
+
 }
 .main {
-    width: 100;
     display: flex;
+    align-items: center;
     justify-content:space-between;
+    height: calc(100vh - 60px);
+
 }
 
 .seccion__encriptador {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 240px;
 }
 .seccion__resultado {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 944px;
+    margin-right: 40px;
     background-color: white;
     border: 1px solid #000000;
     border-radius: 32px;
-
+    justify-content: center;
+    align-items: center;
 }
+.cajaTexto_encriptado {
+    display: none;
+}
+    
 
 .condicionesTexto {
     display: flex;
@@ -84,3 +118,21 @@ input, button, textarea, select {
     height: 16px;
     width: auto;
 }
+
+.boton__copiar {
+    display: none;
+}
+
+.noSeEncontroMensaje {
+    text-align: center;
+    padding: 0px 20px 0px 20px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.mensajeIncreseTexto {
+    padding: 0px 20px 0px 20px;
+    text-align: center;
+}
+
