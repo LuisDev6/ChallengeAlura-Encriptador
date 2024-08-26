@@ -59,10 +59,10 @@
      height: 100%;
  }
 
- textarea {
+ .textoAEncriptar {
      flex-grow: 1;
      font-family: "Inter", sans-serif;
-     background-color: #bbbcbd;
+     background-color: #F3F5FC;
      resize: none;
      border: none;
      width: 680px;
@@ -118,20 +118,33 @@
      margin-bottom: 50px;
  }
 
- .botones__encriptar__desencriptar button {
+
+ .boton__encriptar {
      background-color: #0A3871;
      color: white;
-
-
  }
 
- button:hover {
-     background-color: #072B61;
+ .boton__desencriptar {
+     background-color: #F3F5FC;
+     color: #0A3871;
  }
 
- button:active {
+ .boton__encriptar:hover {
+     background-color: #004085;
+ }
+
+ .boton__encriptar:active {
      transform: scale(0.95);
      background-color: #004085;
+ }
+
+ .boton__desencriptar:hover {
+     background-color: #AAB2D5;
+ }
+
+ .boton__desencriptar:active {
+     transform: scale(0.95);
+     background-color: #AAB2D5;
  }
 
  /*SECCION DEL RESULTADO*/
@@ -150,10 +163,13 @@
  }
 
  .cajaTexto_encriptado {
-     width: auto;
-
-     margin: 40px 20px 40px 20px;
- }
+     width: 300px;
+     height: 200px;
+     font-family: "Inter", sans-serif;
+     background-color: #F3F5FC;
+     resize: none;
+     border: none;
+     margin: 40px;
  }
 
  .noSeEncontroMensaje {
@@ -166,11 +182,18 @@
 
  .boton__copiar {
      background-color: white;
+     margin-top: 95px;
      margin-bottom: 20px;
      border-color: #0A3871;
      color: #0A3871;
+     align-self: flex-end;
  }
 
  .boton__copiar:hover {
      background-color: #E9ECF8;
+ }
+
+ .boton__copiar:active {
+     transform: scale(0.95);
+     background-color: #F3F5FC;
  }

@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
     <title>Encriptador de texto</title>
 </head>
 
@@ -18,7 +20,7 @@
     <main class="main">
 
         <section class="seccion__encriptador">
-            <textarea name="texto" id="texto" placeholder="Ingrese el texto aquí..." autofocus="true"></textarea>
+            <textarea class="textoAEncriptar" name="texto" id="texto" placeholder="Ingrese el texto aquí..." autofocus="true"></textarea>
 
             <div class="condicionesTexto">
                 <img src="/images/exclamacion.png" alt="Signo de exclamación">
@@ -26,19 +28,19 @@
             </div>
             <div class="botones__encriptar__desencriptar">
                 <button class="boton__encriptar">Encriptar</button>
-                <button class="boton__desencriptar" disabled >Desencriptar</button>
+                <button class="boton__desencriptar" disabled>Desencriptar</button>
             </div>
         </section>
 
         <section class="seccion__resultado">
             <textarea class="cajaTexto_encriptado"></textarea>
             <img src="/images/figura.png" alt="Figura de persona buscando información">
-           
+
             <p class="noSeEncontroMensaje">Ningún mensaje fue encontrado</p>
             <p class="mensajeIncreseTexto">Ingresa el texto que desees encriptar o desencriptar.</p>
-           
+
             <div>
-            <button class="boton__copiar" disabled>Copiar</button>
+                <button class="boton__copiar" disabled>Copiar</button>
             </div>
         </section>
     </main>
