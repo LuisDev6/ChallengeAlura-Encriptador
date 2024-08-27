@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,31 +20,35 @@
     <main class="main">
 
         <section class="seccion__encriptador">
-            <textarea class="textoAEncriptar" name="texto" id="texto" placeholder="Ingrese el texto aquí..." autofocus="true"></textarea>
+            <textarea class="textoAEncriptar" name="textoAEncriptar" oninput="validarTextoIngresado(this.value)"
+                id="textoOriginal" placeholder="Ingrese el texto aquí..." autofocus="true"></textarea>
 
             <div class="condicionesTexto">
                 <img src="/images/exclamacion.png" alt="Signo de exclamación">
                 <p>Solo letras minúsculas y sin acentos</p>
             </div>
             <div class="botones__encriptar__desencriptar">
-                <button class="boton__encriptar">Encriptar</button>
+                <button class="boton__encriptar" onclick="encriptarTexto()">Encriptar</button>
                 <button class="boton__desencriptar" disabled>Desencriptar</button>
             </div>
         </section>
 
         <section class="seccion__resultado">
+            <p class="mensajeEncriptado"></p>
+            <div class="imagenTexto">
             <img src="/images/figura.png" alt="Figura de persona buscando información">
             <p class="noSeEncontroMensaje">Ningún mensaje fue encontrado</p>
             <p class="mensajeIncreseTexto">Ingresa el texto que desees encriptar o desencriptar.</p>
-
-            <div>
-                <button class="boton__copiar" disabled>Copiar</button>
+            </div>
+            <div class="boton__visible">
+                <button class="boton__copiar" >Copiar</button>
             </div>
         </section>
     </main>
-
+    <script src="./js/encriptador.js"></script>
     <footer>
         <p>Curso de Alura 2024 - Encriptador de texto diseñado por LuisDev6</p>
     </footer>
 </body>
+
 </html>

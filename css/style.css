@@ -96,12 +96,6 @@
      width: auto;
  }
 
-
- .mensajeIncreseTexto {
-     padding: 0px 20px 0px 20px;
-     text-align: center;
- }
-
  button {
      border: 1px solid #0A3871;
      font-family: "inter", sans-serif;
@@ -171,16 +165,16 @@
      font-size: 24px;
      font-weight: bold;
  }
+ .mensajeIncreseTexto {
+    padding: 0px 20px 0px 20px;
+    text-align: center;
+}
 
- .boton__copiar {
-     display: none;
-     background-color: white;
-     margin-top: 95px;
-     margin-bottom: 20px;
-     border-color: #0A3871;
-     color: #0A3871;
-     align-self: flex-end;
- }
+.boton__visible {
+    align-items:flex-end;
+    justify-content: flex-end;
+}
+
 
  .boton__copiar:hover {
      background-color: #E9ECF8;
@@ -190,3 +184,29 @@
      transform: scale(0.95);
      background-color: #F3F5FC;
  }
+
+
+ .mensajeEncriptado {
+    font-size: 24px;
+    color: #495057;
+    font-weight: 400;
+    margin-top: 20; /* Alinea el párrafo al inicio del contenedor */
+    width: 100%; /* Hace que el párrafo ocupe el 100% del ancho disponible */
+    word-wrap: break-word; /* Fuerza a que las palabras largas se corten y envuelvan a la siguiente línea */
+    overflow-y: auto; /* Permite el scroll vertical si el contenido es demasiado largo */
+    white-space: pre-wrap; /* Mantiene los saltos de línea y envuelve el texto automáticamente */
+    padding: 20px; /* Espacio interior para que el texto no quede pegado a los bordes */
+    box-sizing: border-box; /* Incluye padding y border dentro de las dimensiones del elemento */
+    max-height: calc(100% - 60px); 
+
+}
+
+.boton__copiar {
+    display: none;
+    background-color: white;
+    border-color: #0A3871;
+    color: #0A3871;
+    align-self: flex-end; /* Alinea el botón al final del contenedor */
+    margin-top: auto; /* Empuja el botón hacia abajo */
+    margin-bottom: 12px;
+}
