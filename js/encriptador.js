@@ -29,7 +29,7 @@ function encriptarTexto() {
 
     // Mostrar el botón de copiar, si está oculto
     const botonCopiar = document.querySelector(".boton__copiar");
-    botonCopiar.style.display = 'block'; 
+    botonCopiar.style.display = 'block';
     const seccionResultado = document.querySelector(".seccion__resultado");
     seccionResultado.classList.add(".boton__visible");
     seccionResultado.style.justifyContent = 'space-between';
@@ -51,15 +51,21 @@ function desencriptarTexto() {
 
     // Mostrar el botón de copiar, si está oculto
     const botonCopiar = document.querySelector(".boton__copiar");
-    botonCopiar.style.display = 'block'; 
+    botonCopiar.style.display = 'block';
     const seccionResultado = document.querySelector(".seccion__resultado");
     seccionResultado.classList.add(".boton__visible");
-    seccionResultado.style.justifyContent = 'space-between';    
+    seccionResultado.style.justifyContent = 'space-between';
 }
 
 //BOTON DE COPIAR
 
-function copiarTexto(textoResultado) {
-    
+const botonCopiar = document.querySelector(".boton__copiar");
 
-}
+botonCopiar.addEventListener("click", function () {
+    const mensajeEncriptado = document.querySelector(".mensajeEncriptado").innerText;
+    navigator.clipboard.writeText(mensajeEncriptado).then(() => {
+        alert("Texto copiado al portapapeles");
+    }).catch(err => {
+        console.error("Error al copiar el texto: ", err);
+    });
+});
