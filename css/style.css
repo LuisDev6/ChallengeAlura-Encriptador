@@ -208,5 +208,5 @@
     color: #0A3871;
     align-self: flex-end; /* Alinea el botón al final del contenedor */
     margin-top: auto; /* Empuja el botón hacia abajo */
-    margin-bottom: 12px;
+    margin-bottom: 15px;
 }

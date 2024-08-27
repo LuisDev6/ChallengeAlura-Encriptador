@@ -36,7 +36,30 @@ function encriptarTexto() {
 }
 
 function desencriptarTexto() {
+    const textoOriginal = document.getElementById("textoOriginal").value;
+    const textoDesencriptado = textoOriginal.replace(/enter/gi, 'e').replace(/imes/gi, 'i').replace(/ai/gi, 'a').replace(/ober/gi, 'o').replace(/ufat/gi, 'u');
+    console.log(textoDesencriptado);
+    // Mostrar el texto encriptado en el <p> correspondiente
+    const textoResultado = document.querySelector(".mensajeEncriptado");
+    textoResultado.innerHTML = textoDesencriptado;
+
+    // Ocultar la imagen
+    const imagen = document.querySelector(".imagenTexto");
+    if (imagen) {
+        imagen.style.display = 'none';
+    }
+
+    // Mostrar el botón de copiar, si está oculto
+    const botonCopiar = document.querySelector(".boton__copiar");
+    botonCopiar.style.display = 'block'; 
+    const seccionResultado = document.querySelector(".seccion__resultado");
+    seccionResultado.classList.add(".boton__visible");
+    seccionResultado.style.justifyContent = 'space-between';    
+}
+
+//BOTON DE COPIAR
+
+function copiarTexto(textoResultado) {
+    
 
 }
-//OCULTAR Y MOSTRAR RESULTAD ENCRIPTADO
-
