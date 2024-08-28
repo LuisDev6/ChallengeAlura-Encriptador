@@ -33,6 +33,4 @@ Un botón que copie el texto encriptado/desencriptado para la sección de transf
 
 # Proyecto terminado y deployado
 
-<h2>Proyecto terminado y deployado</h2>
-
 Link: https://challenge-alura-encriptador-olive.vercel.app/
