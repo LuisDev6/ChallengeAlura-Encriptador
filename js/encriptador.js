@@ -69,3 +69,4 @@ botonCopiar.addEventListener("click", function () {
         console.error("Error al copiar el texto: ", err);
     });
 });
+
