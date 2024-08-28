@@ -57,11 +57,10 @@ function desencriptarTexto() {
     const seccionResultado = document.querySelector(".seccion__resultado");
     seccionResultado.classList.add(".boton__visible");
     seccionResultado.style.justifyContent = 'space-between';
+    
     //mostrar el <p> con el mensaje encriptado
     const mensajeEncriptado = document.querySelector(".mensajeEncriptado");
     mensajeEncriptado.style.display = 'block';
-
-
 }
 
 //BOTON DE COPIAR
