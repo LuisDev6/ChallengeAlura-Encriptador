@@ -52,7 +52,11 @@ function desencriptarTexto() {
     if (imagen) {
         imagen.style.display = 'none';
     }
-
+    const botonCopiar = document.querySelector(".boton__copiar");
+    botonCopiar.style.display = 'block';
+    const seccionResultado = document.querySelector(".seccion__resultado");
+    seccionResultado.classList.add(".boton__visible");
+    seccionResultado.style.justifyContent = 'space-between';
 
 
 }
