@@ -192,7 +192,7 @@
      font-size: 24px;
      color: #495057;
      font-weight: 400;
-     margin-top: 20;
+     margin-top: 20px;
      width: 100%;
      word-wrap: break-word;
      overflow-y: auto;
@@ -294,10 +294,11 @@
         display: none;
     }
     .mensajeEncriptado {
+        display: none;
         font-size: 24px;
         color: #495057;
         font-weight: 400;
-        margin-top: 20;
+        margin-top: 1px;
         width: 100%;
         word-wrap: break-word;
         overflow-y: auto;

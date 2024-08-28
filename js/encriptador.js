@@ -33,6 +33,10 @@ function encriptarTexto() {
     const seccionResultado = document.querySelector(".seccion__resultado");
     seccionResultado.classList.add(".boton__visible");
     seccionResultado.style.justifyContent = 'space-between';
+
+    //mostrar el <p> con el mensaje encriptado
+    const mensajeEncriptado = document.querySelector(".mensajeEncriptado");
+    mensajeEncriptado.style.display = 'block';
 }
 
 function desencriptarTexto() {
@@ -49,12 +53,8 @@ function desencriptarTexto() {
         imagen.style.display = 'none';
     }
 
-    // Mostrar el botón de copiar, si está oculto
-    const botonCopiar = document.querySelector(".boton__copiar");
-    botonCopiar.style.display = 'block';
-    const seccionResultado = document.querySelector(".seccion__resultado");
-    seccionResultado.classList.add(".boton__visible");
-    seccionResultado.style.justifyContent = 'space-between';
+
+
 }
 
 //BOTON DE COPIAR
